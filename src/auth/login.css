@@ -1,0 +1,161 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/025/934/704/large_2x/abstract-neon-light-gaming-background-generated-by-ai-free-photo.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @keyframes neon {
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(255, 0, 255, 0.6), 0 0 10px rgba(255, 0, 255, 0.6), 0 0 20px rgba(255, 0, 255, 0.6), 0 0 40px rgba(255, 0, 255, 0.6), 0 0 80px rgba(255, 0, 255, 0.6), 0 0 90px rgba(255, 0, 255, 0.6), 0 0 100px rgba(255, 0, 255, 0.6), 0 0 150px rgba(255, 0, 255, 0.6);
+    }
+    50% {
+      box-shadow: 0 0 5px rgba(114, 217, 217, 0.632), 0 0 10px rgba(114, 217, 217, 0.632), 0 0 20px rgba(114, 217, 217, 0.632), 0 0 40px rgba(114, 217, 217, 0.632), 0 0 80px rgba(114, 217, 217, 0.632), 0 0 90px rgba(114, 217, 217, 0.632), 0 0 100px rgba(114, 217, 217, 0.632), 0 0 150px rgba(114, 217, 217, 0.632);
+    }
+  }
+  
+  
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .container {
+    width: 360px;
+    padding: 30px 50px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    animation: neon 1.5s ease-in-out infinite alternate;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: pulse 2s infinite;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+  
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    transition: all 0.3s ease;
+  }
+  
+  .input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+  
+  .page-link {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .page-link-label {
+    color: #161a1f;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .page-link-label:hover {
+    color: #252c32;
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .form-btn {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .form-btn:hover {
+    background-color: #2e9180;
+    transform: scale(1.05);
+  }
+  
+  .sign-up-label,
+  .login-label {
+    margin-top: 20px;
+    color: #1b1717;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  .sign-up-link,
+  .login-link {
+    color: #111518;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .sign-up-link:hover,
+  .login-link:hover {
+    color: #0056b3;
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .buttons-container {
+    margin-top: 20px;
+  }
+  
+  .apple-login-button,
+  .google-login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .apple-login-button:hover,
+  .google-login-button:hover {
+    background: rgba(255, 255, 255, 0.7);
+    transform: scale(1.05);
+  }
+  
+  .apple-icon,
+  .google-icon {
+    margin-right: 10px;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+  }
+  
